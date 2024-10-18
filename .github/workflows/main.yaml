@@ -1,5 +1,5 @@
 # Your workflow name.
-name: CI/CD for Dockerized Flask App.
+name: CI/CD for Dockerized Flask App 2.
 
 # Run workflow on every push to main branch.
 on:
@@ -40,7 +40,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME}}/flask-app:latest1
+          tags: ${{ secrets.DOCKER_USERNAME}}/flask-appnew:latest1
 
 
           # (Optional, default: "./")

@@ -1,11 +1,12 @@
 # Your workflow name.
-name: Deploy to heroku.
+name: CI/CD for Dockerized Flask App.
 
 # Run workflow on every push to main branch.
 on:
   push:
     branches: [main]
-
+  pull_request:
+    branches: [main]
 # Your workflows jobs.
 jobs:
   build:
